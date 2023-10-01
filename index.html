@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styler.css">
+</head>
+<body>
+    <div class="title">
+        <h1>CRUD</h1>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="submeterForm()">
+                    <div>
+                        <label for="nomeComp">Nome completo</label>
+                        <input type="text" name="momeComp" id="nomeComp">
+                    </div>
+                    <div>
+                        <label for="idade">Idade</label>
+                        <input type="number" name="idade" id="idade">
+                    </div>
+                    <div>
+                        <label for="salario">Salário</label>
+                        <input type="number" name="salario" id="salario">
+                    </div>
+                    <div>
+                        <label for="cidade">Cidade</label>
+                        <input type="text" name="cidade" id="cidade">
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="Salvar">
+                        <input type="reset" value="Apagar">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="listaEmpregados">
+                    <thead>
+                        <tr>
+                            <th>Nome Completo</th>
+                            <th>Idade</th>
+                            <th>Salário</th>
+                            <th>Cidade</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>
